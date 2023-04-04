@@ -15,27 +15,27 @@ public class main {
         Person Sasha = new Person("Саша", 9);
         Person Sasha2 = new Person("Саша", 3);
 
-        GeoTree gt = new GeoTree();
-        Tree treeG;
-        treeG = gt;
-        treeG.appendPerentChild(natalia, misha);
-        treeG.appendPerentChild(natalia, masha);
-        treeG.appendPerentChild(misha, jane);
-        treeG.appendPerentChild(misha, ivan);
-        treeG.appendVifeHusbent(natalia, vacheslav);
-        treeG.appendPerentChild(vacheslav, misha);
-        treeG.appendPerentChild(vacheslav, masha);
-        treeG.appendPerentChild(vacheslav, Sasha);
-        treeG.appendPerentChild(misha, Sasha2);
+        GeoGTree gt = new GeoGTree();
+        gTree gTreeG;
+        gTreeG = gt;
+        gTreeG.appendPerentChild(natalia, misha);
+        gTreeG.appendPerentChild(natalia, masha);
+        gTreeG.appendPerentChild(misha, jane);
+        gTreeG.appendPerentChild(misha, ivan);
+        gTreeG.appendVifeHusbent(natalia, vacheslav);
+        gTreeG.appendPerentChild(vacheslav, misha);
+        gTreeG.appendPerentChild(vacheslav, masha);
+        gTreeG.appendPerentChild(vacheslav, Sasha);
+        gTreeG.appendPerentChild(misha, Sasha2);
 
         System.out.println("Дети Натальи");
-        System.out.println(new Research(treeG).spend(natalia, Relationship.parent));
+        System.out.println(new Research(gTreeG).spend(natalia, Relationship.parent));
         System.out.println("Муж Натальи");
-        System.out.println(new Research(treeG).spend(natalia, Relationship.vife));
+        System.out.println(new Research(gTreeG).spend(natalia, Relationship.vife));
         System.out.println("Дети Вячеслава");
-        System.out.println(new Research(treeG).spend(vacheslav, Relationship.parent));
+        System.out.println(new Research(gTreeG).spend(vacheslav, Relationship.parent));
 
-        System.out.println(new Research(treeG).searchAge());
+        System.out.println(new Research(gTreeG).searchAge());
 
     }
 }

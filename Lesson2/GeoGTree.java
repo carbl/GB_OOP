@@ -1,7 +1,7 @@
 package Lesson2;
 import java.util.ArrayList;
 
-public class GeoTree implements Tree {
+public class GeoGTree implements gTree {
 
     private ArrayList<Node> tree = new ArrayList<>();
 

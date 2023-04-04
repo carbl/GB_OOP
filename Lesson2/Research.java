@@ -7,8 +7,8 @@ public class Research {
     ArrayList<Node> tree;
     ArrayList<String> resultAge = new ArrayList<>();
 
-    public Research(Tree Tree) {
-        tree = Tree.getTree();
+    public Research(gTree gTree) {
+        tree = gTree.getTree();
     }
 
     public ArrayList<String> spend(Person p, Relationship re) {
